@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/kongbai"
+        android:layout_width="match_parent"
+        android:layout_height="90dp" />
+
+    <LinearLayout
+        android:id="@+id/layout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/kongbai1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            tools:ignore="DuplicateIds" />
+
+        <ImageView
+            android:id="@+id/log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:maxWidth="200px"
+            android:maxHeight="200px"
+            android:src="@drawable/touxiang" />
+
+        <TextView
+            android:id="@+id/kongbai2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="                  微信号：xxxxxxxx"
+            android:textSize="20dp" />
+
+        <requestFocus />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout01"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/kongbai3"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/zhifu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/kongbai3"
+            android:text="支付" />
+
+        <Button
+            android:id="@+id/shoucang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/kongbai3"
+            android:text="收藏" />
+
+        <Button
+            android:id="@+id/xiangce"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/kongbai3"
+            android:text="相册" />
+
+        <Button
+            android:id="@+id/kabao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/kongbai3"
+            android:text="卡包" />
+
+        <TextView
+            android:id="@+id/kongbai5"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <Button
+            android:id="@+id/select"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/kongbai3"
+            android:text="设置" />
+
+        <requestFocus />
+    </LinearLayout>
+
+</RelativeLayout>
+
